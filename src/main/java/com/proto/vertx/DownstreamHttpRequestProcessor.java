@@ -31,7 +31,7 @@ public class DownstreamHttpRequestProcessor extends AbstractVerticle {
                 8082,
                 res -> {
                   if (res.succeeded()) {
-                    log.info("Server is now listening!");
+                    log.info("Server is ready!");
                   } else {
                     log.info("Failed to bind!");
                     log.info("{}", res);
