@@ -13,8 +13,6 @@ public class Application {
 
     vertx.deployVerticle("com.proto.vertx.UpstreamHttpRequestProcessor", new DeploymentOptions().setInstances(4));
     vertx.deployVerticle("com.proto.vertx.DownstreamHttpRequestProcessor", new DeploymentOptions().setInstances(4));
-
-//    singe object for queue
     vertx.deployVerticle("com.proto.vertx.MessageQueueVerticle");
 
   }
